@@ -3,7 +3,9 @@
 /*
 
 Plugin Name: WP Geo
-Plugin URI: https://wordpress.org/plugins/wp-geo/
+Plugin URI: https://github.com/Fussverkehr/WP-Geo
+GitHub Plugin URI: https://github.com/Fussverkehr/WP-Geo
+GitHub Plugin URI: Fussverkehr/WP-Geo
 Description: Adds location maps to your posts, pages and custom post types.
 Author: Ben Huson
 Author URI: https://github.com/benhuson/wp-geo
