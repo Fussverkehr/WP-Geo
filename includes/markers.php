@@ -30,7 +30,7 @@ class WPGeo_Markers {
 			'large',
 			__( 'Default Large Marker', 'wp-geo' ),
 			__( 'This is the default marker used to indicate a location on most maps.', 'wp-geo' ),
-			20, 34, 10, 34,
+			50, 34, 25, 34,
 			$this->get_image_url( 'large-marker.png' ),
 			$this->get_image_url( 'large-marker-shadow.png' )
 		);
@@ -40,7 +40,7 @@ class WPGeo_Markers {
 			'small',
 			__( 'Default Small Marker', 'wp-geo' ),
 			__( 'This is the default marker used for the WP Geo sidebar widget.', 'wp-geo' ),
-			10, 17, 5, 17,
+			24, 17, 11, 17,
 			$this->get_image_url( 'small-marker.png' ),
 			$this->get_image_url( 'small-marker-shadow.png' )
 		);
