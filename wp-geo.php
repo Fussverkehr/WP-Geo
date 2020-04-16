@@ -9,12 +9,14 @@ GitHub Plugin URI: Fussverkehr/WP-Geo
 Description: Adds location maps to your posts, pages and custom post types.
 Author: Ben Huson
 Author URI: https://github.com/benhuson/wp-geo
-Version: 3.5
+Text Domain: wp-geo
+Domain Path: /languages
+Version: 3.5.1
 Tested up to: 5.4
 Minimum WordPress Version Required: 3.9
 
 Released under the GPL:
-http://www.opensource.org/licenses/gpl-license.php
+https://www.opensource.org/licenses/gpl-license.php
 
 */
 

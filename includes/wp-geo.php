@@ -7,7 +7,7 @@
 class WPGeo {
 	
 	// Version Information
-	var $version    = '3.5';
+	var $version    = '3.5.1';
 	var $db_version = 1;
 	
 	var $api;
@@ -64,13 +64,6 @@ class WPGeo {
 			include_once( WPGEO_DIR . 'admin/admin.php' );
 			$this->admin = new WPGeo_Admin();
 		}
-	}
-
-	/**
-	 * Deprecated PHP 4 Constructor
-	 */
-	function WPGeo() {
-		$this->__construct();
 	}
 
 	/**
@@ -252,7 +245,7 @@ class WPGeo {
 
 				// Would make sense to look these up automatically from Google
 				//echo '<meta name="geo.region" content="DE-BY" />';                                            // Geo-Tag: Country code (ISO 3166-1) and regional code (ISO 3166-2)
-				//echo '<meta name="geo.placename" content="MÙnchen" />';                                       // Geo-Tag: City or the nearest town
+				//echo '<meta name="geo.placename" content="MÃ™nchen" />';                                       // Geo-Tag: City or the nearest town
 				echo '<meta name="geo.position" content="' . esc_attr( $coord->get_delimited( ';' ) ) . '" />'; // Geo-Tag: Latitude and longitude
 				echo '<meta name="ICBM" content="' . esc_attr( $coord->get_delimited() ) . '" />';              // ICBM Tag (prior existing equivalent to the geo.position)
 
@@ -428,7 +421,7 @@ class WPGeo {
 
 	/**
 	 * Get Google Maps Locale
-	 * See http://code.google.com/apis/maps/faq.html#languagesupport for link to updated languages codes.
+	 * See https://code.google.com/apis/maps/faq.html#languagesupport for link to updated languages codes.
 	 * https://spreadsheets.google.com/pub?key=p9pdwsai2hDMsLkXsoM05KQ&gid=1
 	 *
 	 * @author Alain Messin, tweaked by Ben :)

@@ -13,13 +13,6 @@ class WPGeo_API {
 	}
 
 	/**
-	 * Deprecated PHP 4 Constructor
-	 */
-	function WPGeo_API() {
-		$this->__construct();
-	}
-
-	/**
 	 * Map
 	 * Gets map to display.
 	 *
@@ -65,7 +58,7 @@ class WPGeo_API {
 			'maptype' => $types[$map->get_map_type()],
 			'markers' => 'color:red%7C' . $coord->get_delimited(),
 			'sensor'  => 'false'
-		), 'http://maps.googleapis.com/maps/api/staticmap' );
+		), 'https://maps.googleapis.com/maps/api/staticmap' );
 
 		return esc_url_raw( apply_filters( 'wpgeo_static_map_url', $url, $map ) );
 
@@ -88,7 +81,7 @@ class WPGeo_API {
 		$url = add_query_arg( array(
 			'q' => $coord->get_delimited(),
 			'z' => $map->get_map_zoom()
-		),'http://maps.google.co.uk/maps' );
+		),'https://maps.google.co.uk/maps' );
 
 		return esc_url_raw( apply_filters( 'wpgeo_map_url', $url, $map ) );
 
